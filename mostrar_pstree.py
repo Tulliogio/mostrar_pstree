@@ -216,6 +216,7 @@ if any(is_very_important(G.nodes[n]['label']) for n in G.nodes()):
 # Info mínima
 info_text = f"Mostrando {len(G.nodes())} procesos más relevantes"
 plt.figtext(0.02, 0.02, info_text, fontsize=8, style='italic')  # Texto de info más pequeño
+plt.savefig("grafico_pstree.png", dpi=300, bbox_inches='tight')
 
 plt.show()
 
